@@ -1,0 +1,278 @@
+.bg-cream{
+    background-color: #faf7ec;
+}
+.bg-green{
+    background-color: #a8b17e!important;
+}
+h1, h3, a, p, small{
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+}
+header{
+    z-index:2;
+}
+.inverse{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+#dots{
+   
+position: relative;
+}
+#project-1{
+    height:40vh;
+    font-family:  "Roboto Mono", Helvetica, Arial, sans-serif;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='50%' y='50%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>01.Projects</text></svg>");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
+#skills{
+    font-family:  "Roboto Mono", Helvetica, Arial, sans-serif;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='60%' y='60%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>Skills</text></svg>");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+
+#carousel-2{
+    font-family:  "Roboto Mono", Helvetica, Arial, sans-serif;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='50%' y='50%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>&lt;div&gt;</text><text x='60%' y='70%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>&lt;ul</text></svg>");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#libro {
+    width: 400px;
+    height: 400px;
+    background: url(../img/libro.png) 0 0;
+    -webkit-animation: playbook 1s steps(30)forwards;
+    -moz-animation: playbook 1s steps(30) forwards;
+    -ms-animation: playbook 1s steps(30) forwards;
+    -o-animation: playbook 1s steps(30) forwards;
+}
+
+#carouselHome i.material-icons {
+    display: inline-block;
+    color: tomato;
+    font-size:100px;
+   
+
+}
+#carouselHome i.material-icons:hover {
+    animation:spin 0.5s ease;
+
+}
+
+@keyframes spin{
+  100%  {
+   
+      transform:rotate(360deg);
+    }
+} 
+
+
+
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1!important;
+}
+
+
+#skills i.material-icons{
+    font-size: 49px;
+    vertical-align: middle;
+}
+.back-one{
+  
+  background: 
+  linear-gradient(-45deg, transparent 0%, transparent 40%, white 40%, white  60%, transparent 60%, transparent 100%);
+  
+ 
+}
+ .back-two{
+    
+    height:300px;
+    
+ }
+ .dots-background{
+    background-image: url(../img/dots.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+ }
+ .z-index-1{
+    z-index: 1;
+ }
+ .mr-negative{
+    margin-right: -20%;
+ }
+ .ml-negative{
+    margin-left: -20%;
+}
+ .text-up h3{
+     position: relative;
+    
+     cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    font-weight: bold;
+    color: inherit;
+    position: relative;
+    z-index: 1;
+    padding: 10px 4px;
+    transition: color 0.8s ease 0.4s;
+}
+
+
+.text-up h3::after {
+    content: "";
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    background-color: #ffc107;
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    bottom: 15;
+    left: 0px;
+    z-index: -1;
+    transition: width 0.8s ease 0s, height 0.8s ease 0s, background-color 0s ease 0.4s, top 0.2s ease-in-out 0s;
+}
+
+.text-up h3:hover::after {
+    animation-name: underline-text;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes underline-text{
+    0%{
+        right:0;
+        left:auto;
+        width:100%;
+    }
+    50%{right:0;
+        left:auto;
+        width:0;
+    }
+    50.0001%{
+        right:auto;
+        left:0;
+        width:0;
+    }
+    100%{right:auto;
+        left:0;
+        width:100%;
+    }
+}
+
+
+.text-up.aos-animate {
+    -webkit-animation:  fadeInUp 1s ease;
+    -moz-animation:  fadeInUp 1s ease;
+    -ms-animation:  fadeInUp 1s ease;
+    -o-animation:  fadeInUp 1s ease;
+
+}
+
+
+
+ .box-rotate{
+    width:100%;
+     background-size: cover;
+     background-position: center center;
+    transition: all 0.5 ease;
+}
+
+.box-rotate.aos-animate::before {
+    
+    content: '';
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    
+    left: 0;
+    z-index: 21;
+    -webkit-animation: img-slide 1.5s ease;
+    -moz-animation: img-slide 1.5s ease;
+    -ms-animation: img-slide 1.5s ease;
+    -o-animation: img-slide 1.5s ease;
+}
+/*Animation Direction*/
+.box-up::before {
+    top: 0;
+}
+.box-down::before{
+    bottom: 0;
+}
+/*Animation Colors*/
+
+.tomato-back{
+    height:400px;
+}
+.tomato-back::before {
+background-color: tomato;
+}
+
+
+.green-back{
+    height:700px;
+}
+.green-back::before {
+background-color:  #a8b17e;
+}
+
+.white-back{
+    height:700px;
+}
+.white-back::before {
+    height:700px;
+    background-color:  #fff;
+ }
+
+@keyframes img-slide{
+    0%{
+        height:100%;
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    40%{
+        transform: scale(1);
+    }
+   
+    60%{
+        height:100%;
+      
+    }
+    100%{
+        height: 0;
+        transform: scale(1);
+    }
+}
+
+/*Modal transform*/
+
+.modal-dialog-slideout {
+    min-height: 100vh; 
+max-width: 100vw!important;
+    margin: 0 0 0 auto!important;
+    background: #fff;
+}
+.modal.fade .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(100%,0)scale(1);transform: translate(100%,0)scale(1);}
+.modal.fade.show .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(0,0);transform: translate(0,0);display: flex;align-items: stretch;-webkit-box-align: stretch;height: auto;}
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body{overflow-y: visible;}
+.modal-dialog-slideout .modal-content{border: 0;}
+
+.modal{
+    padding-right: 0!important;
+}

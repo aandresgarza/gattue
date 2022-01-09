@@ -1,0 +1,95 @@
+@-webkit-keyframes playbook {
+    from { background-position:    0px; }
+    to { background-position: -12000px; }
+ }
+ 
+ @-moz-keyframes playbook {
+    from { background-position:    0px; }
+    to { background-position: -12000px; }
+ }
+ 
+ @-ms-keyframes playbook {
+    from { background-position:    0px; }
+    to { background-position: -12000px; }
+ }
+ 
+ @-o-keyframes playbook {
+    from { background-position:    0px; }
+    to { background-position: -12000px; }
+ }
+ 
+ @keyframes playbook {
+    from { background-position:    0px; }
+      to { background-position: -12000px; }
+ }
+
+
+/*Rotation arrows carousel*/
+ @keyframes spin{
+   100%  {
+    
+       transform:rotate(360deg);
+     }
+ } 
+
+
+/*Underline text*/
+ @keyframes underline-text{
+   0%{
+       right:0;
+       left:auto;
+       width:100%;
+   }
+   50%{right:0;
+       left:auto;
+       width:0;
+   }
+   50.0001%{
+       right:auto;
+       left:0;
+       width:0;
+   }
+   100%{right:auto;
+       left:0;
+       width:100%;
+   }
+}
+
+
+@keyframes img-slide{
+   0%{
+       height:100%;
+       transform: scale(1);
+   }
+   20%{
+       transform: scale(1.2);
+   }
+   40%{
+       transform: scale(1);
+   }
+  
+   60%{
+       height:100%;
+     
+   }
+   100%{
+       height: 0;
+       transform: scale(1);
+   }
+}
+@keyframes maskTest{
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 0;
+    }
+  }
+  
+  .necro{
+    position: fixed;
+    background-color: rgb(250, 253, 218);
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 9999;
+  }
