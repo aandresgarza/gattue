@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     $.ajax({
         type: 'get',
-        url: 'http://localhost/gattuejs/index.html',
+        url: 'https://aandresgarza.github.io/gattue/index.html',
         success: function(response) {
             
             $('.necro').removeClass('necro');
