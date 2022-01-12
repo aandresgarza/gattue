@@ -650,6 +650,9 @@ h3.title {
   background: #efcb34;
   width: 0%;
 }
-  
+
+.bordered{
+  border-radius: 30px;
+}
 
 /*# sourceMappingURL=styles.css.map */
