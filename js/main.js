@@ -14,7 +14,7 @@ $(document).ready(function(){
             
         }
     });   
-            $('.add-art').each( function( index ) {
+            $('.prj').each( function( index ) {
                
                 $(this).load("includes/article-" + (index + 1) + ".html");
               });
