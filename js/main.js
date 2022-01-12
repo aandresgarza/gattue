@@ -14,12 +14,7 @@ $(document).ready(function(){
             
         }
     });   
-            $('.prj').each( function( index ) {
-               
-                $(this).load("includes/article-" + (index + 1) + ".html");
-              });
             
-
             $(window) .on('shown.bs.modal', function (e) {
                 $('body').css('overflow', 'hidden');
 
