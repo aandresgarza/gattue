@@ -91,23 +91,14 @@
 }
 @media (max-width: 576px) {
   .mobile-title {
-    position: absolute;
-    display: block;
-    z-index: 1;
-    padding: 11px 20px 0px 20px;
-    transform: rotate(-3deg);
+    padding: 20px;
     display: inline-block;
-    max-width: 200px;
     cursor: pointer;
   }
   .mobile-title.par {
-    bottom: 10px;
-    right: 30px;
     background-color: #fdcfb5;
   }
   .mobile-title.impar {
-    bottom: 10px;
-    left: 30px;
     background-color: #e1ece9;
   }
   .mobile-title > h4 {
