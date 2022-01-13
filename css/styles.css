@@ -96,9 +96,8 @@
     cursor: pointer;
   }
   .mobile-title > h4 {
-    color: #ff4c54;
+    color: #b6b6b8;
     font-family: "Varela Round", sans-serif;
-    font-weight: bold;
   }
 }
 
@@ -639,8 +638,11 @@ h3.title {
   width: 0%;
 }
 
-.bordered {
-  border-radius: 30px;
+@media (max-width: 576px) {
+  .bordered {
+    border-radius: 30px;
+    box-shadow: 0 0.5rem 1rem #fbe0ff;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
