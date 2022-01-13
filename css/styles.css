@@ -95,12 +95,6 @@
     display: inline-block;
     cursor: pointer;
   }
-  .mobile-title.par {
-    background-color: #fdcfb5;
-  }
-  .mobile-title.impar {
-    background-color: #e1ece9;
-  }
   .mobile-title > h4 {
     color: #ff4c54;
     font-family: "Varela Round", sans-serif;
