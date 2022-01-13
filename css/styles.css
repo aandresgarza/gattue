@@ -240,6 +240,7 @@ nav {
 #carouselHome .carousel-control-next,
 #carouselHome .carousel-control-prev {
   opacity: 1 !important;
+  transition: all 0.5s ease-out;
 }
 #carouselHome i.material-icons {
   display: inline-block;
@@ -248,6 +249,8 @@ nav {
 }
 #carouselHome i.material-icons:hover {
   animation: spin 0.5s ease;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 200px;
 }
 #carouselHome #carousel-1 .back-one {
   background: linear-gradient(-45deg, transparent 0%, transparent 40%, white 40%, white 60%, transparent 60%, transparent 100%);
@@ -651,7 +654,7 @@ h3.title {
   width: 0%;
 }
 
-.bordered{
+.bordered {
   border-radius: 30px;
 }
 
