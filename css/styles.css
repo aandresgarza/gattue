@@ -94,6 +94,8 @@
     padding: 20px;
     display: inline-block;
     cursor: pointer;
+    z-index: 1;
+    background: #ffffff87;
   }
   .mobile-title > h4 {
     color: #b6b6b8;
@@ -229,7 +231,7 @@ nav {
 #carouselHome i.material-icons {
   display: inline-block;
   color: #ff4112;
-  font-size: 100px;
+  font-size: 50px;
 }
 #carouselHome i.material-icons:hover {
   animation: spin 0.5s ease;
