@@ -640,7 +640,7 @@ h3.title {
 
 @media (max-width: 576px) {
   .bordered {
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0 0.5rem 1rem #fbe0ff;
   }
 }
