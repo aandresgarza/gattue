@@ -278,7 +278,7 @@ nav {
 #carouselHome #carousel-1 .circle-cats {
   max-width: 170px;
   position: absolute;
-  top: 0;
+  top: 35%;
   left: 0;
 }
 @keyframes playtres {
