@@ -98,6 +98,15 @@
   color: #ffc107;
 }
 
+.mobile-show {
+  display: none;
+}
+@media (max-width: 576px) {
+  .mobile-show {
+    display: block;
+  }
+}
+
 .mobile-title {
   display: none;
 }
