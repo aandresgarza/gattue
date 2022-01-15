@@ -1,11 +1,23 @@
 @charset "UTF-8";
 /*breackpoints bootstrap*/
 .font-varela {
-  font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 .font-mono {
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.text-yellow-gold {
+  color: #ffc107;
 }
 
 .bg-light::before {
@@ -48,7 +60,7 @@
 }
 
 .description-art {
-  font-family: "Varela round";
+  font-family: "Varela Round", sans-serif;
   background: linear-gradient(180deg, rgba(254, 198, 190, 0) 50%, #fdcfb582 50%);
   background-position: 0% 50%;
   background-repeat: no-repeat;
@@ -75,7 +87,7 @@
   border-left: 1px dotted #ffc7c7;
 }
 .categories > small {
-  font-family: "Varela round";
+  font-family: "Varela Round", sans-serif;
   text-align: center;
   font-weight: 400;
 }
@@ -91,15 +103,18 @@
 }
 @media (max-width: 576px) {
   .mobile-title {
-    padding: 20px;
+    padding: 15px;
     display: inline-block;
     cursor: pointer;
     z-index: 1;
+    position: relative;
+    margin-top: -25%;
     background: rgba(255, 255, 255, 0.6);
   }
-  .mobile-title > h4 {
-    color: #b6b6b8;
+  .mobile-title > h5 {
+    color: #000;
     font-family: "Varela Round", sans-serif;
+    font-weight: bold;
   }
 }
 
@@ -197,13 +212,13 @@ h4,
 h5,
 h6,
 a,
-p,
-small {
+p {
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
 }
 
 h1,
 h2,
+small,
 h3, button, .btn, label {
   font-family: "Varela Round", sans-serif;
 }
