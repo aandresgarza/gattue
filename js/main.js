@@ -14,6 +14,11 @@ $(document).ready(function(){
             
         }
     });   
+
+
+    $('.navbar-expand-lg li a').on('click', function(){
+        $('.navbar').removeClass('min-vh-100');
+    });
             
             $(window) .on('shown.bs.modal', function (e) {
                 $('body').css('overflow', 'hidden');
@@ -50,7 +55,7 @@ $(document).ready(function(){
                 event.preventDefault();
                 $('#points').addClass('d-none');
                 $('.navbar').removeClass('d-none');
-                $('.navbar').addClass(' animated fadeInDown');
+                $('.navbar').addClass(' animated fadeInDown min-vh-100');
                 
             });
         
