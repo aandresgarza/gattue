@@ -669,5 +669,38 @@ h3.title {
     border-radius: 20px;
   }
 }
+#blockid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  right: 6%;
+  top: 20px;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  border-radius: 50%;
+  padding: 0;
+  mix-blend-mode: difference;
+  cursor: pointer;
+}
+#blockid:hover {
+  text-decoration: none;
+}
+#blockid:before {
+  font-family: "Material Icons";
+  content: "drag_handle";
+  mix-blend-mode: difference;
+  color: white;
+  font-size: 24px;
+}
+#blockid.close-modal {
+  background-color: #161616;
+}
+#blockid.close-modal:before {
+  content: "close";
+}
 
 /*# sourceMappingURL=styles.css.map */

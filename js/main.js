@@ -1,6 +1,20 @@
 $(document).ready(function(){
-
-
+    
+         
+    $(function(){
+        
+        var rotation = 0;
+        var scrollLoc = $(document).scrollTop();
+        $(window).scroll(function(){
+            var newLoc = $(document).scrollTop();
+            var diff = scrollLoc - newLoc;
+            rotation += diff, scrollLoc = newLoc;
+            var rotationStr = "rotate(" + rotation + "deg)";
+            $(".open-modal").css({
+                "transform" : rotationStr
+            });
+        });
+    });
 
     $.ajax({
         type: 'get',
@@ -14,10 +28,30 @@ $(document).ready(function(){
             
         }
     });   
-
-
+    
+    $('#blockid').on('click', function(){
+        
+        if ($(this).hasClass("open-modal")) {
+            $(this).removeClass('open-modal');
+            $(this).addClass('close-modal');
+            $(this).css({ "transform" : "rotate(0deg)"});
+            $('.navbar').removeClass('d-none');
+            $('.navbar').addClass(' animated fadeInDown min-vh-100');
+            $('body').addClass('overflow-hidden');
+        } else{
+            $(this).removeClass('close-modal');
+            $(this).addClass('open-modal');
+            $(this).css({ "transform" : "rotate(0deg)"});
+            $('.navbar').addClass('d-none');
+            $('body').removeClass('overflow-hidden');
+        }
+    });
+  
     $('.navbar-expand-lg li a').on('click', function(){
         $('.navbar').addClass('d-none');
+        $('#blockid').removeClass('close-modal');
+        $('#blockid').addClass('open-modal');
+        $('body').removeClass('overflow-hidden');
     });
             
             $(window) .on('shown.bs.modal', function (e) {
@@ -56,11 +90,28 @@ $(document).ready(function(){
                 $('#points').addClass('d-none');
                 $('.navbar').removeClass('d-none');
                 $('.navbar').addClass(' animated fadeInDown min-vh-100');
-                
+                $('#blockid').removeClass('d-none');
+                $('#blockid').removeClass('open-modal');
+                $('#blockid').addClass('close-modal');
+                $('#blockid').css({ "transform" : "rotate(0deg)"});
+                $('body').addClass('overflow-hidden');
+                $(window).scrollTop(150);
             });
         
             
-            
+            $(window).on('scroll', function(){
+            var altura = $(window).scrollTop();
+
+            if(altura>70){
+                if( $('#blockid').hasClass("d-none")){
+                    $('#blockid').removeClass('d-none');
+                }
+                
+            }
+            else {
+                $('#blockid').addClass('d-none');
+            }
+        });
           
           
         
