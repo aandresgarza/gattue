@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
     $('.navbar-expand-lg li a').on('click', function(){
-        $('.navbar').removeClass('min-vh-100');
+        $('.navbar').addClass('d-none');
     });
             
             $(window) .on('shown.bs.modal', function (e) {
