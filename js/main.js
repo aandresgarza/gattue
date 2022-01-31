@@ -60,21 +60,7 @@ $(document).ready(function(){
             });
         
             
-            $(window).on('scroll', function(){
-            var altura = $(window).scrollTop();
-
-            if(altura>70){
-                if( $('.navbar').hasClass("d-none")){
-
-                    $('.navbar').removeClass('d-none');
-                    $('.navbar').addClass(' animated fadeInDown');
-                }
-                
-            }
-            else {
-                $('.navbar').addClass('d-none ');
-            }
-        });
+            
           
           
         
