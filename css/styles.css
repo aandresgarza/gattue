@@ -37,25 +37,25 @@
 
 @media (max-width: 576px) {
   .bg-art-1::before {
-    background-image: url("https://www.gattue.tk/img/gege-5.jpg");
+    background-image: url("https://aandresgarza.github.io/gattue/img/gege-5.jpg");
   }
 }
 
 @media (max-width: 576px) {
   .bg-art-2::before {
-    background-image: url("https://www.gattue.tk/img/nomires-tras.jpg");
+    background-image: url("https://aandresgarza.github.io/gattue/img/nomires-tras.jpg");
   }
 }
 
 @media (max-width: 576px) {
   .bg-art-3::before {
-    background-image: url("https://www.gattue.tk/img/emvet-tras.jpg");
+    background-image: url("https://aandresgarza.github.io/gattue/img/emvet-tras.jpg");
   }
 }
 
 @media (max-width: 576px) {
   .bg-art-4::before {
-    background-image: url("https://www.gattue.tk/img/help-tras.jpg");
+    background-image: url("https://aandresgarza.github.io/gattue/img/help-tras.jpg");
   }
 }
 
@@ -268,7 +268,7 @@ nav {
 #carouselHome #carousel-1 #libro {
   width: 400px;
   height: 400px;
-  background: url(https://www.gattue.tk/img/libro.png) 0 0;
+  background: url(https://aandresgarza.github.io/gattue/img/libro.png) 0 0;
   -webkit-animation: playbook 1s steps(30) forwards;
   -moz-animation: playbook 1s steps(30) forwards;
   -ms-animation: playbook 1s steps(30) forwards;
@@ -278,7 +278,7 @@ nav {
   z-index: 1;
   width: 100px;
   height: 100px;
-  background: url(https://www.gattue.tk/img/nube.png) 0 0;
+  background: url(https://aandresgarza.github.io/gattue/img/nube.png) 0 0;
   -webkit-animation: playtres 6s steps(60) infinite;
   -moz-animation: playtres 6s steps(60) infinite;
   -ms-animation: playtres 6s steps(60) infinite;
@@ -307,7 +307,7 @@ nav {
   /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='50%' y='50%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>&lt;div&gt;</text><text x='60%' y='70%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>&lt;ul</text></svg>");*/
 }
 #carouselHome #carousel-2 > .bg-cats {
-  background-image: url("https://www.gattue.tk/img/cats-2.svg");
+  background-image: url("https://aandresgarza.github.io/gattue/img/cats-2.svg");
   background-size: 100vh;
   background-position: top right;
   background-repeat: no-repeat;
@@ -316,7 +316,7 @@ nav {
 }
 @media (max-width: 576px) {
   #carouselHome #carousel-2 > .bg-cats {
-    background-image: url("https://www.gattue.tk/img/cats-3.svg");
+    background-image: url("https://aandresgarza.github.io/gattue/img/cats-3.svg");
     background-position: 118% 73%;
     background-size: 90vw;
   }

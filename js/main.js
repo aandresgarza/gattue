@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     $.ajax({
         type: 'get',
-        url: 'https://www.gattue.tk/index.html',
+        url: 'https://aandresgarza.github.io/gattue/index.html',
         success: function(response) {
             
             $('.necro').removeClass('necro');

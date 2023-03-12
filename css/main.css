@@ -50,7 +50,7 @@ position: relative;
 #libro {
     width: 400px;
     height: 400px;
-    background: url(https://www.gattue.tk/img/libro.png) 0 0;
+    background: url(https://aandresgarza.github.io/gattue/img/libro.png) 0 0;
     -webkit-animation: playbook 1s steps(30)forwards;
     -moz-animation: playbook 1s steps(30) forwards;
     -ms-animation: playbook 1s steps(30) forwards;
@@ -101,7 +101,7 @@ position: relative;
     
  }
  .dots-background{
-    background-image: url(https://www.gattue.tk/img/dots.png);
+    background-image: url(https://aandresgarza.github.io/gattue/img/dots.png);
     background-repeat: no-repeat;
     background-position: right bottom;
  }
