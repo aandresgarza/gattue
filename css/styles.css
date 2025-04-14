@@ -285,10 +285,13 @@ nav {
   -o-animation: playtres 6s steps(60) infinite;
 }
 #carouselHome #carousel-1 .circle-cats {
-  max-width: 170px;
-  position: absolute;
-  top: 35%;
-  left: 0;
+  max-width: 164px;
+    position: absolute;
+    top: 109%;
+    left: 925px;
+    background-color: #f0fffd;
+    border-radius: 200px;
+    padding: 30px;
 }
 @keyframes playtres {
   0% {
