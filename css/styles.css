@@ -306,11 +306,9 @@ nav {
     background-position: -12000px;
   }
 }
-#carouselHome #carousel-2 {
-  /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='50%' y='50%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>&lt;div&gt;</text><text x='60%' y='70%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>&lt;ul</text></svg>");*/
-}
+
 #carouselHome #carousel-2 > .bg-cats {
-      background-image: url(https://aandresgarza.github.io/gattue/img/all.png);
+      background-image: url(https://aandresgarza.github.io/gattue/img/all-white.png);
     background-size: 51vh;
     background-position: center center;
     background-repeat: no-repeat;
@@ -319,7 +317,7 @@ nav {
 }
 @media (max-width: 576px) {
   #carouselHome #carousel-2 > .bg-cats {
-    background-image: url("https://aandresgarza.github.io/gattue/img/all.png");
+    background-image: url("https://aandresgarza.github.io/gattue/img/all-white.png");
     background-position: 118% 73%;
     background-size: 90vw;
   }
