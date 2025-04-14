@@ -713,5 +713,7 @@ h3.title {
 #blockid.close-modal:before {
   content: "close";
 }
-
+.h1-sized{
+  font-size:3.5rem;
+}
 /*# sourceMappingURL=styles.css.map */
