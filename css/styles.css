@@ -310,12 +310,12 @@ nav {
   /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='50%' y='50%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>&lt;div&gt;</text><text x='60%' y='70%' stroke='silver' stroke-width='1px'  font-family='Roboto Mono, Consolas, mono-space' fill='transparent' font-size='200'>&lt;ul</text></svg>");*/
 }
 #carouselHome #carousel-2 > .bg-cats {
-  background-image: url("https://aandresgarza.github.io/gattue/img/all.png");
-  background-size: 100vh;
-  background-position: top right;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+      background-image: url(https://aandresgarza.github.io/gattue/img/all.png);
+    background-size: 51vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
 @media (max-width: 576px) {
   #carouselHome #carousel-2 > .bg-cats {
