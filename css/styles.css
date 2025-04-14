@@ -291,7 +291,16 @@ nav {
     left: 925px;
     background-color: #f0fffd;
     border-radius: 200px;
-    padding: 30px;
+      animation: rotar 3s linear infinite;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes playtres {
   0% {
