@@ -319,7 +319,7 @@ nav {
 }
 @media (max-width: 576px) {
   #carouselHome #carousel-2 > .bg-cats {
-    background-image: url("https://aandresgarza.github.io/gattue/img/cats-3.svg");
+    background-image: url("https://aandresgarza.github.io/gattue/img/all.png");
     background-position: 118% 73%;
     background-size: 90vw;
   }
