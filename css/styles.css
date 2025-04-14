@@ -287,11 +287,12 @@ nav {
 #carouselHome #carousel-1 .circle-cats {
   max-width: 164px;
     position: absolute;
-    top: 109%;
-    left: 925px;
+    top: 10px;
+    left: 24%;
     background-color: #f0fffd;
+    padding: 20px;
     border-radius: 200px;
-      animation: rotar 3s linear infinite;
+    animation: rotar 8s linear infinite;
 }
 
 @keyframes rotar {
