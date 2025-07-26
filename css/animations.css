@@ -1,27 +1,3 @@
-@-webkit-keyframes playbook {
-    from { background-position:    0px; }
-    to { background-position: -12000px; }
- }
- 
- @-moz-keyframes playbook {
-    from { background-position:    0px; }
-    to { background-position: -12000px; }
- }
- 
- @-ms-keyframes playbook {
-    from { background-position:    0px; }
-    to { background-position: -12000px; }
- }
- 
- @-o-keyframes playbook {
-    from { background-position:    0px; }
-    to { background-position: -12000px; }
- }
- 
- @keyframes playbook {
-    from { background-position:    0px; }
-      to { background-position: -12000px; }
- }
 
 
 /*Rotation arrows carousel*/

@@ -1,6 +1,35 @@
 $(document).ready(function(){
-    
-         
+const libro = document.getElementById('libro');
+
+// Mostrar el último fotograma al inicio
+libro.style.backgroundPosition = '-11200px 0px';
+
+function reproducirUnaVez() {
+    libro.classList.remove('forward', 'reverse');
+    void libro.offsetWidth; // forzar reflow
+    libro.classList.add('reverse'); // animar hacia atrás
+
+    setTimeout(() => {
+        libro.classList.remove('reverse');
+        void libro.offsetWidth;
+        libro.classList.add('forward'); // animar hacia adelante
+
+        setTimeout(() => {
+            libro.classList.remove('forward');
+            libro.style.backgroundPosition = '-11200px 0px'; // quedarse en el último frame
+        }, 1000); // duración "abrir"
+    }, 1000); // duración "cerrar"
+}
+
+// 1. Ejecutar automáticamente una vez al cargar
+
+
+// 2. Ejecutar de nuevo al hacer hover (mouseenter)
+libro.addEventListener('mouseenter', () => {
+    reproducirUnaVez();
+});
+    reproducirUnaVez();
+
     $(function(){
         
         var rotation = 0;

@@ -47,15 +47,17 @@ position: relative;
     background-repeat: no-repeat;
 }
 
-#libro {
-    width: 400px;
-    height: 400px;
-    background: url(https://aandresgarza.github.io/gattue/img/libro.png) 0 0;
-    -webkit-animation: playbook 1s steps(30)forwards;
-    -moz-animation: playbook 1s steps(30) forwards;
-    -ms-animation: playbook 1s steps(30) forwards;
-    -o-animation: playbook 1s steps(30) forwards;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 #carouselHome i.material-icons {
     display: inline-block;

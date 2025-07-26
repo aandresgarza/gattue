@@ -255,24 +255,106 @@ nav {
 #carouselHome i.material-icons {
   display: inline-block;
   color: #ff4112;
-  font-size: 50px;
+  font-size: 70px;
+  border: 1px solid #eaeaea;
+  border-radius: 200px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
 }
 #carouselHome i.material-icons:hover {
   animation: spin 0.5s ease;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  
+}
+.circle-container{
+  height: 160px;
+  width: 160px;
+  position: relative;
+}
+.circle-container svg{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transform-origin: center;
+  border-radius: 50%;
+  border: 1px solid #eaeaea;
+}
+.circle-turn{
+  top: 0;
+  margin-left:12% ;
+  
+}
+.circle-center{
+  position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       z-index: 1;
+}
+.draw{
+      
+    z-index: 1;
+    
+    position: absolute;
+    
+    &.cross{
+        bottom: 40%;
+       left: 21%;
+        width: 120px;
+        transform: rotate(45deg);
+    
+    }
+    &.dot{
+      width: 30px;
+      margin-left: 66%;
+      bottom: 10%;
+      z-index: 2;
+    }
+    &.spiral{
+             margin-left: 69%;
+        width: 129px;
+        transform: rotate(32deg);
+        bottom: 123px;
+    }
 }
 #carouselHome #carousel-1 .back-one {
   background: linear-gradient(-45deg, transparent 0%, transparent 40%, white 40%, white 60%, transparent 60%, transparent 100%);
 }
-#carouselHome #carousel-1 #libro {
+#libro {
   width: 400px;
   height: 400px;
-  background: url(https://aandresgarza.github.io/gattue/img/libro.png) 0 0;
-  -webkit-animation: playbook 1s steps(30) forwards;
-  -moz-animation: playbook 1s steps(30) forwards;
-  -ms-animation: playbook 1s steps(30) forwards;
-  -o-animation: playbook 1s steps(30) forwards;
+  background: url('../img/libro.webp') -11200px 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  filter: drop-shadow(0px 0px 3px #948f8f);
+}
+@keyframes flotar {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.flota {
+  animation: flotar 4s ease-in-out infinite;
+}
+
+.reverse {
+  animation: cerrar .5s steps(28) forwards;
+}
+
+.forward {
+  animation: abrir .5s steps(28) forwards;
+}
+
+@keyframes cerrar {
+  from { background-position: -11200px; }
+  to   { background-position: 0px; }
+}
+
+@keyframes abrir {
+  from { background-position: 0px; }
+  to   { background-position: -11200px; }
 }
 #carouselHome #carousel-1 #nube {
   z-index: 1;
@@ -283,17 +365,6 @@ nav {
   -moz-animation: playtres 6s steps(60) infinite;
   -ms-animation: playtres 6s steps(60) infinite;
   -o-animation: playtres 6s steps(60) infinite;
-}
-#carouselHome #carousel-1 .circle-cats {
-  max-width: 164px;
-    position: absolute;
-    top: 31px;
-    left: 14%;
-    background-color: #f0fffd;
-    padding: 20px;
-    border-radius: 200px;
-    animation: rotar 8s linear infinite;
-    z-index: 0;
 }
 
 @keyframes rotar {
@@ -388,6 +459,7 @@ nav {
 #skills i.material-icons {
   font-size: 49px;
   vertical-align: middle;
+  
 }
 #skills .masked, #skills svg {
   overflow: visible;
@@ -446,6 +518,46 @@ h3 {
 
 h3.title {
   font-family: "Roboto Mono", monospace;
+}
+.circle-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 50px auto;
+}
+.turned{
+ display: inline-block;
+    transform: rotate(25deg);
+    vertical-align: bottom;
+    margin-bottom: -2px;
+    margin-left: 3px;
+    margin-right: 2px;
+  
+}
+
+.circle-text {
+  
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  animation: girar 10s linear infinite;
+}
+
+.circle-text span {
+  position: absolute;
+  width:150px;
+  height: 150px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  transform-origin: center center;
+  font-size: 18px;
+  font-family: sans-serif;
+  transform: rotate(2.5deg) translateY(-140px) rotate(-2.5deg);
+}
+
+@keyframes girar {
+  0%   { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .text-up h3 {
@@ -715,6 +827,16 @@ h3.title {
   content: "close";
 }
 .h1-sized{
-  font-size:3.5rem;
+  font-size:4.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
+.triangle-shape{
+  width: 12%;
+    height: 20%;
+    top: 60%;
+    right: 80%;
+    transform: translate3d(0px, 66px, 0px) translate3d(0px, -240px, 0px) translate3d(0px, 5px, 0px) rotate(225deg);
+    fill: rgb(239, 203, 52);
+    stroke: rgb(239, 203, 52);
+    mix-blend-mode: multiply;
+}
